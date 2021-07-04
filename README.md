@@ -7,5 +7,5 @@ external dependency :
 
 update the api keys in the java source code
 
-to compile : javac WeatherApp.java
+to compile : javac WeatherApp.java \n
 to run : java WeatherApp
