@@ -225,7 +225,7 @@ public class WeatherApp
 		    String weather = getWeather(latitude ,longitude);
 		    String location = getReverseGeoEncoding(latitude ,longitude);
 		    if(!weather.isEmpty())
-		        System.out.println(Integer.toString(++counter) +  " Location " + location + " Latitude " + latitude + " Longitude " + longitude + " " + weather);
+		        System.out.println(Integer.toString(++counter) +  " Location " + location + " ,Latitude " + latitude + " ,Longitude " + longitude + " , " + weather);
 		    System.out.println("");
 		    if(i==stops.size()-1){
     		    ++i;
