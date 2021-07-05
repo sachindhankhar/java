@@ -27,7 +27,7 @@ public class WeatherApp
     //regex to extract latitude and longitude from all filtered points in format -> latitude:longitude
     private static String getIntermediateRoutesPointRegex = "(?<=\\{\"latitude\":)([0-9.]*)(?=,)|(?<=\"longitude\":)([0-9.]*)(?=\\})";
 
-    //regex to extrac weather details in format -> temparature:weatherReport:description
+    //regex to extract weather details in format -> temparature:weatherReport:description
     private static String getWeatherRegex = "(?<=\"temp\":)([0-9.]*)(?=[,}])|(?<=\"main\":\")([a-zA-Z ]*)(?=\")|(?<=\"description\":\")([a-zA-Z ]*)(?=\")";
     
     
@@ -103,7 +103,7 @@ public class WeatherApp
         return coordinates;
     }
     
-    //return latitude and longitude of the location
+    //return location from latitude and longitude 
     private static String getReverseGeoEncoding(String latitude ,String longitude){
         
         //request format : http://api.openweathermap.org/geo/1.0/reverse?lat=51.5098&lon=-0.1180&limit=5&appid=apiKey
